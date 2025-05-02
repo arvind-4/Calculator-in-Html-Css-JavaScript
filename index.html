@@ -1,38 +1,39 @@
 <!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="container">
-    <div id="content-setting">
-        <div class="calculator">
-            <input type="text" class="calc-numbers" id='text'>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div id="content-setting">
+          <div class="calculator">
+            <input type="text" class="calc-numbers" id="text" />
             <div class="calculator-buttons">
-                <button class="btn is-clear span-2 orange operator" onclick="clear_function()">C</button>
-                <button class="btn orange operator" onclick="backspace()">&larr;</button>
-                <button class="btn orange operator" onclick="dis('/')">&divide;</button>
-                <button class="btn" onclick="dis('7')">7</button>
-                <button class="btn" onclick="dis('8')">8</button>
-                <button class="btn" onclick="dis('9')">9</button>
-                <button class="btn orange operator" onclick="dis('*')">x</button>
-                <button class="btn" onclick="dis('4')">4</button>
-                <button class="btn" onclick="dis('5')">5</button>
-                <button class="btn" onclick="dis('6')">6</button>
-                <button class="btn orange" onclick="dis('-')">-</button>
-                <button class="btn" onclick="dis('1')">1</button>
-                <button class="btn" onclick="dis('2')">2</button>
-                <button class="btn" onclick="dis('3')">3</button>
-                <button class="btn orange operator" onclick="dis('+')">+</button>
-                <button class="btn span-2" onclick="dis('0')">0</button>
-                <button class="btn span-2 orange operator" onclick="sol()">=</button>
+              <button class="btn is-clear span-2 orange operator" id="clear">C</button>
+              <button class="btn orange operator" id="back">&larr;</button>
+              <button class="btn orange operator" data-val="/">÷</button>
+              <button class="btn" data-val="7">7</button>
+              <button class="btn" data-val="8">8</button>
+              <button class="btn" data-val="9">9</button>
+              <button class="btn orange operator" data-val="*">x</button>
+              <button class="btn" data-val="4">4</button>
+              <button class="btn" data-val="5">5</button>
+              <button class="btn" data-val="6">6</button>
+              <button class="btn orange" data-val="-">-</button>
+              <button class="btn" data-val="1">1</button>
+              <button class="btn" data-val="2">2</button>
+              <button class="btn" data-val="3">3</button>
+              <button class="btn orange operator" data-val="+">+</button>
+              <button class="btn span-2" data-val="0">0</button>
+              <button class="btn span-2 orange operator" id="equal">=</button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<script src="js/script.js"></script>
-</body>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
