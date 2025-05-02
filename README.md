@@ -1,20 +1,20 @@
-# Calculator-in-Html-Css-JavaScript
+# Calculator in JS
 
-A  Simple Calculator Using HTML, CSS, & JS 
+A Simple Calculator Using HTML, CSS, & JS
 
-### Step 1: Make a Folder
+### Step 1: Make a folder and clone the repo
 
-```
-cd /path/to/folder
-mkdir calculator
-cd calculator
-```
-
-### Step 2: Clone Repository
-
-```
-git clone https://github.com/Arvind-4/Calculator-in-Html-Css-JavaScript.git .
-open index.html in Browser
+```bash
+mkdir -p ~/Dev/calculator-in-js
+cd ~/Dev/calculator-in-js
+git clone https://github.com/arvind-4/calculator-in-js.git .
 ```
 
-Check the [Website](https://arvind-4.github.io/Calculator-in-Html-Css-JavaScript/)
+### Step 2: Install and Run the dev server
+
+```bash
+bun install
+bun run dev
+```
+
+Check the [Hosted website](https://calculator-in-js-liard.vercel.app)
